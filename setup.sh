@@ -24,10 +24,9 @@ sudo apt-get install jq
 echo "move the shadowrecon and lib to /usr/local/bin"
 sleep 1
 cd $main_path
-sudo mkdir /usr/local/bin/SHR
 sudo chmod +x shadow_recon.sh
 sudo chmod +x scan_lib
-sudo mv shadow_recon.sh /usr/local/bin/SHR/shadow_recon
-sudo mv scan_lib /usr/local/bin/SHR/
+sudo mv shadow_recon.sh /usr/local/bin/shadow_recon
+sudo mv scan_lib /usr/local/bin/
 sleep 1.5
 rm -rf $main_path
