@@ -11,7 +11,7 @@ sudo apt-get install python3
 #download dirsearch
 echo "installing dirsearch from github"
 sleep 1.5
-sudo git clone https://github.com/maurosoria/dirsearch.git
+git clone https://github.com/maurosoria/dirsearch.git
 #move the dirsearch to default path
 echo "setup dirsearch and another tools"
 sleep 1.5
