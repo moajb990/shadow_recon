@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 source scan_lib
-PATH_TO_DIRSEARCH="/home/mzjb/dirsearch"
+
 
 # help usage -h / --help
 
