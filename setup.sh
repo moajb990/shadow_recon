@@ -5,6 +5,8 @@ echo "saving user and main path."
 user=$(logname)
 main_path=$(pwd)
 ###########
+mkdir /home/$user/Desktop/shadow_reconup
+mv update_repo.sh /home/$user/Desktop/shadow_reconup/
 # install python
 echo "installing python"
 sudo apt-get install python3
