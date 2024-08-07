@@ -15,7 +15,9 @@ if [ -d "$temp_dir" ];then
 	rm -rf "$target_dir"/*
 
 
-	cp -r "$temp_dir"/* "$target_dir"
+	cp -r "$temp_dir"/shadow_recon.sh "$target_dir"/shadow_recon
+ 	cp -r "$temp_dir"/scan_lib "$target_dir"
+  	cp -r "$temp_dir"/update_repo.sh "$target_dir"/update_repo
 	echo "files updated successfully in $target_dir "
 else
 echo "faild to clone the files."
