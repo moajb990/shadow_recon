@@ -1,6 +1,6 @@
 #! /bin/bash
 user=$(logname)
-PATH_TO_DIRSEARCH="/home/$user/Desktop/dirsearch/"
+PATH_TO_DIRSEARCH="/home/$user/Desktop/dirsearch"
 shadow_theme() {
   echo """
 -!-!-!-!-!-!-!-!-!-!-!-!-!- by Moatuz -!-!-!-!-!-!-!-!-!-!-!-!-!-
