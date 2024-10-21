@@ -17,7 +17,7 @@ if [ -d "$temp_dir" ];then
   # copy all shadow_recon files to our final directory
   cp -r "$temp_dir"/recon.sh "$target_dir"/shr
   cp -r "$temp_dir"/scan.lib "$target_dir"
-  cp -r "$temp_dir"/update_repo.sh "$target_dir"/up_shr
+  cp -r "$temp_dir"/update_repo.sh "$target_dir"/up-shr
   echo "files updated successfully in $target_dir"
   
 else
