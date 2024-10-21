@@ -40,6 +40,7 @@ usage:
        ShadowRecon -m n-o -i for interactive mode
 
 shr -m <MODE> <TARGET1> <TARGET2/optional> <TARGET3/optional>
+
 there is 3 MODES in version 1.0.0 
 modes:
 1)n-o this run  nmap scan only 
