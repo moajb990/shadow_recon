@@ -5,10 +5,6 @@ version="1.0.0"
 user=$(whoami)
 main_path=$(pwd)
 
-##########
-mkdir /home/$user/Desktop/shadow_recon-up
-mv update_repo.sh /home/$user/Desktop/shadow_recon-up/
-
 #install python
 echo "installing python"
 sudo apt-get install python3
@@ -27,8 +23,8 @@ sudo apt-get install jq
 #make our recon work in /usr/local/bin
 echo "moving our recon and lib to /usr/local/bin/ "
 cd $main_path
-sudo chmod +x shr.sh
-sudo chmod +x scan.lib
+sudo chmod +x *
 sudo mv shr.sh /usr/local/bin/shr
 sudo mv scan.lib /usr/local/bin/
+sudo mb update_repo.sh /usr/local/bin/up-shr
 rm -rf $main_path
