@@ -6,7 +6,7 @@ version="1.0.0"
 path_to_dirsearch="" # here your path to dirsearch tool 
 
 # import library
-source ./scan.lib
+source scan.lib
 
 #get my help function
 help_function() {
