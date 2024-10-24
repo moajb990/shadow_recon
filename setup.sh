@@ -1,5 +1,5 @@
 #version
-version="1.0.0"
+version="1.0.1"
 
 #save user
 user=$(whoami)
@@ -13,7 +13,7 @@ sudo apt-get install python3
 echo "installing dirsearch from github"
 sleep 0.1
 pip3 install dirsearch
-
+go get -u github.com/tomnomnom/assetfinder
 #setup our dirsearch directory and aother tools
 sudo mv dirsearch /home/$user/Desktop
 sleep 0.01
