@@ -1,0 +1,50 @@
+#!/bin/bash
+
+usern=$(whoami)
+path_to_assetfinder="/home/mzjb/go/bin/assetfinder/"
+shadow_theme() {
+
+  echo -e """\e[32m
+-!-!-!-!-!-!-!-!-!-!-!-!-!- sos!by moa_the_bug!sos -!-!-!-!-!-!-!-!-!-!-!-!-!-
+
+              ! SHADOW RECON !
+
+            █▓▒▓█▀██▀█▄░░▄█▀██▀█▓▒▓█
+            █▓▒░▀▄▄▄▄▄█░░█▄▄▄▄▄▀░▒▓█
+            █▓▓▒░░░░░▒▓░░▓▒░░░░░▒▓▓█
+            
+
+-!-!-!-!-!-!-!-!-!-!-!-!-!- auto recon tool -!-!-!-!-!-!-!-!-!-!-!-!-!- 
+\e[0m"""
+
+}
+
+assetfinder_scan()
+{
+
+	$path_to_assetfinder./assetfinder --subs-only $DOMAIN > $DIRECTORY/assetfinder
+	echo "the result of assetfinder scan are stored in $DIRECTORY"
+	
+}
+
+
+nmap_scan()
+
+{
+    nmap $DOMAIN > $DIRECTORY/nmap
+    echo "the result of nmap scan are stored in $DIRECTORY"		
+}
+
+dirsearch_scan()
+
+{
+    dirsearch -u $DOMAIN -o $DIRECTORY/dirsearch.txt
+    echo "the result of dirsearch scan are stored in $DIRECTORY"
+}
+
+crt_scan()
+
+{
+    curl "https://crt.sh/?q=$DOMAIN&output=json" -o $DIRECTORY/crt
+    echo "the result of cert parsing are sotred in $DIRECTORY/crt"
+}
