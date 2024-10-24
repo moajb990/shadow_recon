@@ -4,7 +4,7 @@
 version="1.0.1"
 
 path_to_dirsearch="" # here your path to dirsearch tool 
-path_to_assetfinder="/home/mzjb/go/bin/assetfinder/"
+path_to_assetfinder=""# here your path to assetfinder
 # import library
 source ./scan.lib
 
