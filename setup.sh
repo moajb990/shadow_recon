@@ -5,10 +5,6 @@ version="1.0.1"
 user=$(whoami)
 main_path=$(pwd)
 
-#install python
-echo "installing python"
-sudo apt-get install python3
-
 #download dirsearch
 echo "installing dirsearch from github"
 sleep 0.1
