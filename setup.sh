@@ -20,7 +20,7 @@ sudo apt-get install jq
 echo "moving our recon and lib to /usr/local/bin/ "
 cd $main_path
 sudo chmod +x *
-sudo mv shr.sh /usr/local/bin/shr
+sudo mv recon.sh /usr/local/bin/shr
 sudo mv scan.lib /usr/local/bin/
-sudo mb update_repo.sh /usr/local/bin/up-shr
+sudo mv update_repo.sh /usr/local/bin/up-shr
 rm -rf $main_path
